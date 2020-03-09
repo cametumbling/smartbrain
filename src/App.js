@@ -1,11 +1,3 @@
-/* app.models.initModel({id: Clarifai.GENERAL_MODEL, version: "aa7f35c01e0642fda5cf400f543e7c40"})
-      .then(generalModel => {
-        return generalModel.predict("@@sampleTrain");
-      })
-      .then(response => {
-        var concepts = response['outputs'][0]['data']['concepts']
-      })
-*/
 import React from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
@@ -106,7 +98,7 @@ displayFaceBox = (box) => {
           params={ particlesOptions }
         />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
-        { route = 'home'
+        { route ==='home'
           ? <div>
               <Logo />
               <Rank />
@@ -117,7 +109,7 @@ displayFaceBox = (box) => {
               <FaceRecognition box = {box} imageUrl={imageUrl}/>
             </div>
           : (
-              route='signin'
+              route ==='signin'
               ? <SignIn onRouteChange={this.onRouteChange}/>
               : <Register onRouteChange={this.onRouteChange}/>
             )
