@@ -10,19 +10,19 @@ class Register extends React.Component {
     }
   }
 
-  onNameChange =(event) => {
+  onNameChange = (event) => {
     this.setState({name: event.target.value})
   }
 
-  onEmailChange =(event) => {
+  onEmailChange = (event) => {
     this.setState({email: event.target.value})
   }
 
-  onPasswordChange =(event) => {
+  onPasswordChange = (event) => {
     this.setState({password: event.target.value})
   }
 
-  onSubmitSignin = () => {
+  onSubmitSignIn = () => {
     fetch('https://quiet-gorge-98089.herokuapp.com/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},

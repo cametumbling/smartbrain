@@ -61,7 +61,8 @@ class SignIn extends React.Component {
                   type="password"
                   name="password"
                   id="password"
-                  onChange = {this.onPasswordChange}/>
+                  onChange = {this.onPasswordChange}
+                />
               </div>
             </fieldset>
             <div className="">
@@ -69,11 +70,12 @@ class SignIn extends React.Component {
                 onClick={this.onSubmitSignIn}
                 className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                 type="submit"
-                value="Sign in"/>
+                value="Sign in"
+              />
             </div>
             <div className="lh-copy mt3">
               <p
-                onClick={()=>onRouteChange('register')}
+                onClick= { () =>onRouteChange('register')}
                 className="f6 link dim black db pointer">Register
               </p>
             </div>
